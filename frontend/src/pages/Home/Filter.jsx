@@ -22,7 +22,7 @@ const Filter = () => {
     </div>
     <div className="flex flex-col gap-2">
       <label className="font-bold" htmlFor="">Sıralama Ölçütü</label>
-      <select onChange={(e)=>handleChange("order", e.target.value)} className="border py-1 px-4 rounded-md" type="text">
+      <select onChange={(e)=>handleChange("location", e.target.value)} className="border py-1 px-4 rounded-md" type="text">
         <option value="">Seçiniz</option>
         <option value="price-asc">Fiyat:Düşükten Yükseğe</option>
         <option value="price-dsc">Fiyat:Yüksekten Düşüğe</option>
@@ -32,7 +32,7 @@ const Filter = () => {
     </div>
     <div className="flex flex-col gap-2">
       <label className="font-bold" htmlFor="">Konaklama Yeri</label>
-      <input onChange={(e)=>handleChange("location", e.target.value)} className="border py-1 px-4 rounded-md" type="text" placeholder="ör: Seaside villa">
+      <input onChange={(e)=>handleChange("title", e.target.value)} className="border py-1 px-4 rounded-md" type="text" placeholder="ör: Seaside villa">
       </input>
     </div>
     <div className="flex justify-end">
